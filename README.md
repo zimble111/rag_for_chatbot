@@ -4,7 +4,6 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot designed 
 It combines Dense Passage Retrieval (DPR) for context search and Mistral-7B for natural language generation.
 The interface is powered by Gradio, providing an interactive chat demo.
 
-Features
 
 ## Retriever:
 
