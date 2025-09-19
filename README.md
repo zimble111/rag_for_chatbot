@@ -1,4 +1,4 @@
-RAG Pipeline
+# RAG Pipeline
 
 This project implements a Retrieval-Augmented Generation (RAG) chatbot designed to answer questions about Pick-up Point (ПВЗ) operations.
 It combines Dense Passage Retrieval (DPR) for context search and Mistral-7B for natural language generation.
@@ -6,30 +6,23 @@ The interface is powered by Gradio, providing an interactive chat demo.
 
 Features
 
-Retriever:
+## Retriever:
 
-Uses Facebook DPR
- for question encoding
+- Uses Facebook DPR for question encoding
+- Context encoder to embed knowledge base chunks
+- FAISS index for fast similarity search
 
-Context encoder to embed knowledge base chunks
+## Generator:
 
-FAISS index for fast similarity search
+- Uses Mistral-7B-Instructfor response generation
+- Configurable generation parameters (temperature, top-p, max tokens)
 
-Generator:
+## Evaluation metrics included:
 
-Uses Mistral-7B-Instruct
- for response generation
+-F1 score
+-ROUGE-L
 
-Configurable generation parameters (temperature, top-p, max tokens)
+## Frontend:
 
-Evaluation metrics included:
-
-F1 score
-
-ROUGE-L
-
-Frontend:
-
-Simple Gradio ChatInterface with title and description
-
-Instant local or shared demo link
+- Simple Gradio ChatInterface with title and description
+- Instant local or shared demo link
