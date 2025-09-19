@@ -1,0 +1,7 @@
+pandas
+openpyxl
+transformers
+faiss-cpu
+accelerate
+sentencepiece
+bitsandbytes
